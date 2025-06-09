@@ -1,6 +1,6 @@
 ## 📝 DigitalOcean Spaces Sync Script – README
 
-This script allows you to **upload** or **download** folders to/from a [DigitalOcean Spaces](https://docs.digitalocean.com/products/spaces/) bucket using the AWS CLI.
+This script allows you to **upload** or **download** folders to/from a [DigitalOcean Spaces](https://docs.digitalocean.com/products/spaces/) bucket using the AWS CLI (can be used for any S3 compatible object storage).
 
 ---
 
@@ -83,14 +83,14 @@ Then enter:
 1. Ensure the script (`do_space_sync.sh`) is executable:
 
    ```bash
-   chmod +x do_space_sync.sh
+   chmod +x script_sync.sh
    ```
 
 2. Run the script with `upload` or `download`:
 
    ```bash
-   ./do_space_sync.sh upload
-   ./do_space_sync.sh download
+   ./script_sync.sh upload
+   ./script_sync.sh download
    ```
 
 3. Follow the interactive prompts:
@@ -104,9 +104,9 @@ Then enter:
 ### 📦 Example
 
 ```bash
-./do_space_sync.sh upload
+./script_sync.sh upload
 # Prompts:
-#   > Bucket Name: easm-docker-images
+#   > Bucket Name: docker-images
 #   > Local Folder: ./docker_images
 #   > Region Endpoint: blr1.digitaloceanspaces.com
 ```
